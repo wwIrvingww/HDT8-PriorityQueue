@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="MENSAJITO">
+    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="Se implementó un método para crear un arrayist de tipo Patient">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PriorityQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <workItem from="1679623154143" duration="3196000" />
       <workItem from="1679670152421" duration="53000" />
       <workItem from="1679673382387" duration="12000" />
-      <workItem from="1679677156271" duration="1645000" />
+      <workItem from="1679677156271" duration="4295000" />
     </task>
     <task id="LOCAL-00001" summary="Se implemento la clase Reader para leer el archivo de texto">
       <created>1679593765491</created>
@@ -74,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679630753617</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se implementó un método para crear un arrayist de tipo Patient">
+      <created>1679679340042</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679679340042</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +102,7 @@
     <MESSAGE value="Se implemento la clase Reader Patient que simula a un paciente" />
     <MESSAGE value="se agrego la clase de Priority Queue" />
     <MESSAGE value="MENSAJITO" />
-    <option name="LAST_COMMIT_MESSAGE" value="MENSAJITO" />
+    <MESSAGE value="Se implementó un método para crear un arrayist de tipo Patient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementó un método para crear un arrayist de tipo Patient" />
   </component>
 </project>

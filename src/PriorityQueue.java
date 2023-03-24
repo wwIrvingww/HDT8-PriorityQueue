@@ -1,101 +1,102 @@
-import java.util.Arrays;
 import java.util.Comparator;
 
-public class PriorityQueue<T> {
+import java.util.ArrayList;
 
-    private static final int DEFAULT_CAPACITY = 10;
+public class PriorityQueue {
 
-    private T[] elements;
-    private int size;
-    private Comparator<T> comparator;
+    private ArrayList<Patient> heap;
+    private Comparator<Patient> comparator;
 
     public PriorityQueue() {
-        this(DEFAULT_CAPACITY, null);
-    }
-
-    public PriorityQueue(int initialCapacity) {
-        this(initialCapacity, null);
-    }
-
-    public PriorityQueue(Comparator<T> comparator) {
-        this(DEFAULT_CAPACITY, comparator);
-    }
-
-    public PriorityQueue(int initialCapacity, Comparator<T> comparator) {
-        if (initialCapacity <= 0) {
-            throw new IllegalArgumentException("Invalid initial capacity: " + initialCapacity);
-        }
-        this.elements = (T[]) new Object[initialCapacity];
-        this.size = 0;
-        this.comparator = comparator;
-    }
-
-    public boolean offer(T element) {
-        if (element == null) {
-            throw new NullPointerException("Cannot add null element");
-        }
-        if (size == elements.length) {
-            resize(elements.length * 2);
-        }
-        elements[size++] = element;
-        bubbleUp(size - 1);
-        return true;
-    }
-
-    public T poll() {
-        if (isEmpty()) {
-            return null;
-        }
-        T root = elements[0];
-        elements[0] = elements[--size];
-        elements[size] = null;
-        bubbleDown(0);
-        return root;
-    }
-
-    public T peek() {
-        return isEmpty() ? null : elements[0];
-    }
-
-    public int size() {
-        return size;
+        this.heap = new ArrayList<>();
+        this.comparator = new Comparator<Patient>() {
+            @Override
+            public int compare(Patient p1, Patient p2) {
+                return p1.getPriority().compareTo(p2.getPriority());
+            }
+        };
     }
 
     public boolean isEmpty() {
-        return size == 0;
+        return heap.isEmpty();
+    }
+
+    public int size() {
+        return heap.size();
+    }
+
+    public void offer(Patient patient) {
+        heap.add(patient);
+        bubbleUp(heap.size() - 1);
+    }
+
+    public Patient poll() {
+        if (isEmpty()) {
+            return null;
+        }
+        Patient root = heap.get(0);
+        Patient last = heap.remove(size() - 1);
+        if (!isEmpty()) {
+            heap.set(0, last);
+            bubbleDown(0);
+        }
+        return root;
+    }
+
+    public Patient peek() {
+        if (isEmpty()) {
+            return null;
+        }
+        return heap.get(0);
     }
 
     private void bubbleUp(int index) {
-        while (index > 0 && compare(index, parent(index)) < 0) {
-            swap(index, parent(index));
-            index = parent(index);
+        while (index > 0) {
+            int parentIndex = parent(index);
+            if (compare(heap.get(index), heap.get(parentIndex)) < 0) {
+                swap(index, parentIndex);
+                index = parentIndex;
+            } else {
+                break;
+            }
         }
     }
 
     private void bubbleDown(int index) {
-        while (leftChild(index) < size) {
+        while (true) {
             int minChildIndex = minChildIndex(index);
-            if (compare(index, minChildIndex) <= 0) {
+            if (minChildIndex == -1) {
                 break;
             }
-            swap(index, minChildIndex);
-            index = minChildIndex;
+            if (compare(heap.get(minChildIndex), heap.get(index)) < 0) {
+                swap(index, minChildIndex);
+                index = minChildIndex;
+            } else {
+                break;
+            }
         }
     }
 
     private int minChildIndex(int index) {
-        int left = leftChild(index);
-        int right = rightChild(index);
-        if (right >= size || compare(left, right) <= 0) {
-            return left;
+        int leftChildIndex = leftChild(index);
+        int rightChildIndex = rightChild(index);
+        if (leftChildIndex >= size() && rightChildIndex >= size()) {
+            return -1;
         }
-        return right;
+        if (leftChildIndex >= size()) {
+            return rightChildIndex;
+        }
+        if (rightChildIndex >= size()) {
+            return leftChildIndex;
+        }
+        return compare(heap.get(leftChildIndex), heap.get(rightChildIndex)) < 0 ?
+                leftChildIndex : rightChildIndex;
     }
 
     private void swap(int i, int j) {
-        T temp = elements[i];
-        elements[i] = elements[j];
-        elements[j] = temp;
+        Patient temp = heap.get(i);
+        heap.set(i, heap.get(j));
+        heap.set(j, temp);
     }
 
     private int parent(int index) {
@@ -110,15 +111,8 @@ public class PriorityQueue<T> {
         return index * 2 + 2;
     }
 
-    private int compare(int i, int j) {
-        if (comparator == null) {
-            return ((Comparable<T>) elements[i]).compareTo(elements[j]);
-        } else {
-            return comparator.compare(elements[i], elements[j]);
-        }
+    private int compare(Patient p1, Patient p2) {
+        return comparator.compare(p1, p2);
     }
 
-    private void resize(int newCapacity) {
-        elements = Arrays.copyOf(elements, newCapacity);
-    }
 }
