@@ -1,8 +1,12 @@
+import java.util.ArrayList;
+
 public class Patient {
     //Variables
     private String name;
     private String description;
     private String priority;
+
+    private ArrayList<Patient> patientList;
 
     //Getters and Setters
     public String getName() {
@@ -35,6 +39,8 @@ public class Patient {
         this.description = description;
         this.priority = priority;
     }
+
+
 
 
 

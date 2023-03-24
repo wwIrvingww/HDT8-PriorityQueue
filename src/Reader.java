@@ -24,7 +24,6 @@ public class Reader {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                //line = line.toLowerCase();
                 System.out.println(line.getClass());
                 lines.add(line);
             }
@@ -36,5 +35,18 @@ public class Reader {
         }
         return lines;
     }
+
+
+    //Para crear una lista de pacientes:
+    public static ArrayList<Patient> getPatientList(ArrayList<String> patients) {
+        ArrayList<Patient> patientArrayList = new ArrayList<>();
+        for (String s : patients) {
+            String[] date = s.split(", ");
+            Patient patient = new Patient(date[0], date[1], date[2]);
+            patientArrayList.add(patient);
+        }
+        return patientArrayList;
+    }
+
 
 }
