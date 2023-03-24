@@ -24,7 +24,7 @@ public class Reader {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                line = line.toLowerCase();
+                //line = line.toLowerCase();
                 System.out.println(line.getClass());
                 lines.add(line);
             }
