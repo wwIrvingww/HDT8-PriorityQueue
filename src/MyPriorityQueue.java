@@ -2,12 +2,13 @@ import java.util.Comparator;
 
 import java.util.ArrayList;
 
-public class PriorityQueue {
+public class MyPriorityQueue {
 
-    private ArrayList<Patient> heap;
+
+    ArrayList<Patient> heap;
     private Comparator<Patient> comparator;
 
-    public PriorityQueue() {
+    public MyPriorityQueue() {
         this.heap = new ArrayList<>();
         this.comparator = new Comparator<Patient>() {
             @Override
@@ -114,6 +115,14 @@ public class PriorityQueue {
     private int compare(Patient p1, Patient p2) {
         return comparator.compare(p1, p2);
     }
+
+    public Patient getPatient(int index) {
+        if (index < 0 || index >= size()) {
+            throw new IndexOutOfBoundsException("Índice fuera de los límites del heap");
+        }
+        return heap.get(index);
+    }
+
 
 
 

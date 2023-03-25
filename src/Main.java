@@ -10,43 +10,52 @@ public class Main {
         String path = "C:\\Users\\USUARIO\\OneDrive\\UVG\\Clases\\Tercer Semestre\\Estructura de datos\\Codes\\HDT8-PriorityQueue\\HDT8-PriorityQueue\\Patients.txt";
         ArrayList<String> patients;
         patients = Reader.readFile(path);
-        PriorityQueue queue = new PriorityQueue();
+        MyPriorityQueue queue = new MyPriorityQueue();
         ArrayList<Patient> patientArrayList = Reader.getPatientList(patients);
         int remove = -1;
 
 
-
-        System.out.println("LISTA DE PACIENTES ");
+        //Mostrar la lista de pacientes leída del txt file
+        System.out.println("\nLISTA DE PACIENTES ");
         for (Patient patient : patientArrayList) {
             queue.offer(patient);
-            System.out.println("En fila: " + patient.getName()+" "+patient.getPriority());
+            System.out.println("En fila: " + patient.getName()+ ", "+patient.getDescription()+ ", "+patient.getPriority());
         }
 
-        System.out.println("ORDENADOS");
 
-        /**while (!queue.isEmpty()) {
-            Patient patient = queue.poll();
-            System.out.println("Siguiente: " + patient.getName()+" "+patient.getPriority());
-        }*/
-        
-        while (remove != 3) {
-            System.out.println("¿Desea atender al siguiente paciente?\n(1)Si\n(2)No\n(3)Salir");
-            remove = sc.nextInt();
-            switch (remove) {
-                case 1:
-                    queue.poll();
-                    printPatients(queue);
-                case 2:
-                    System.out.println("ok");
-                    printPatients(queue);
+        //Inicia la interacción con el usuario
+        System.out.println("\nEsoja una opción\n(1)Atender al siguiente\n(2)Agregar paciente\n(3)Ver la lista\n(4)Salir");
+        int optionn = sc.nextInt();
 
+        while (optionn != 4){
+            if (optionn == 1)
+            {
+                queue.poll();
+                System.out.println("Se ha atendido existosamente");
             }
-        }
-    }
-    public static void printPatients(PriorityQueue queue) {
-        while (!queue.isEmpty()) {
-            Patient patient = queue.peek();
-            System.out.println("Siguiente: " + patient.getName()+" "+patient.getPriority());
+            else if (optionn == 2){
+                System.out.println("Ingrese el nombre del paciente");
+                String name  = sc.next();
+                System.out.println("Agregue la descripcion");
+                String desciption  = sc.nextLine();
+                desciption = sc.nextLine();
+                System.out.println("Agregue la prioridad");
+                String letter = sc.next().toUpperCase();
+                Patient newPatient = new Patient(name,desciption,letter);
+                queue.offer(newPatient);
+                System.out.println("Se ha agregado exitosamente");
+            }
+            else if (optionn == 3){
+                int k = 0;
+                while (k < queue.size()) {
+                    Patient patient = queue.getPatient(k);
+                    System.out.println("Esperando: " + patient.getName()+ ", "+patient.getDescription()+", "+patient.getPriority());
+                    k++;
+                }
+            }
+            System.out.println("\nEsoja una opción\n(1)Atender al siguiente\n(2)Agregar paciente\n(3)Ver la lista\n(4)Salir");
+            optionn = sc.nextInt();
+
         }
     }
 
