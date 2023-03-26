@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="se inicializaron los metodos con la clase Priority queue proporcionada por Java">
+    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="se culminó la interacción utilizando la PirorityQueue de java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IComparable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaPriorityQueue.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
       <workItem from="1679762607654" duration="4420000" />
       <workItem from="1679767090039" duration="1958000" />
       <workItem from="1679781454456" duration="10000" />
-      <workItem from="1679847490125" duration="4357000" />
+      <workItem from="1679847490125" duration="6844000" />
     </task>
     <task id="LOCAL-00001" summary="Se implemento la clase Reader para leer el archivo de texto">
       <created>1679593765491</created>
@@ -112,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679849516745</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="se culminó la interacción utilizando la PirorityQueue de java">
+      <created>1679852166555</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679852166555</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +150,7 @@
     <MESSAGE value="se trabajo en la interaccion con el usuario" />
     <MESSAGE value="se ha finalizado la parte del codigo que corre con mi propia implementacion" />
     <MESSAGE value="se inicializaron los metodos con la clase Priority queue proporcionada por Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="se inicializaron los metodos con la clase Priority queue proporcionada por Java" />
+    <MESSAGE value="se culminó la interacción utilizando la PirorityQueue de java" />
+    <option name="LAST_COMMIT_MESSAGE" value="se culminó la interacción utilizando la PirorityQueue de java" />
   </component>
 </project>

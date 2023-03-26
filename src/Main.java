@@ -7,7 +7,6 @@ public class Main {
         //Instanciar objetos
         Scanner sc = new Scanner(System.in);
 
-
         //Declaracion de variables
         String path = "C:\\Users\\USUARIO\\OneDrive\\UVG\\Clases\\Tercer Semestre\\Estructura de datos\\Codes\\HDT8-PriorityQueue\\HDT8-PriorityQueue\\Patients.txt";
         ArrayList<String> patients;
@@ -21,15 +20,12 @@ public class Main {
         optionPriorityQueue = sc.nextInt();
 
         if (optionPriorityQueue == 1) {
-
-
             //Mostrar la lista de pacientes leída del txt file
             System.out.println("\nLISTA DE PACIENTES ");
             for (Patient patient : patientArrayList) {
                 queue.offer(patient);
                 System.out.println("En fila: " + patient.getName() + ", " + patient.getDescription() + ", " + patient.getPriority());
             }
-
 
             //Inicia la interacción con el usuario
             System.out.println("\nEsoja una opción\n(1)Atender al siguiente\n(2)Agregar paciente\n(3)Ver la lista\n(4)Salir");
@@ -69,6 +65,7 @@ public class Main {
         }
 
         else {
+            //Declaracion de variables
             PriorityQueue<Patient> javaPriorityQueue = new PriorityQueue<>();
             ArrayList<Patient> patientArrayList1 = Reader.getPatientList(patients);
             for (Patient p: patientArrayList1){
@@ -81,6 +78,7 @@ public class Main {
                 Patient elemento = iter.next();
                 System.out.println(elemento.getName()+", "+elemento.getDescription()+", "+elemento.getPriority());
                 }
+            //Inicia interaccion con el usuario
             System.out.println("\nEsoja una opción\n(1)Atender al siguiente\n(2)Agregar paciente\n(3)Ver la lista\n(4)Salir");
             int optionn = sc.nextInt();
             while (optionn != 4) {
@@ -113,17 +111,8 @@ public class Main {
                 optionn = sc.nextInt();
 
             }
-
-
-
-
-
-
-
             }
-
         }
-
 }
 
 

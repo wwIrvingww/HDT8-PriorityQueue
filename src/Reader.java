@@ -36,8 +36,12 @@ public class Reader {
         return lines;
     }
 
+    /**
+     *  Para crear una lista de pacientes
+     * @param patients
+     * @return
+     */
 
-    //Para crear una lista de pacientes:
     public static ArrayList<Patient> getPatientList(ArrayList<String> patients) {
         ArrayList<Patient> patientArrayList = new ArrayList<>();
         for (String s : patients) {
