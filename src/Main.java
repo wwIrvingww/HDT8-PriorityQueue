@@ -30,8 +30,13 @@ public class Main {
         while (optionn != 4){
             if (optionn == 1)
             {
-                queue.poll();
-                System.out.println("Se ha atendido existosamente");
+                if (queue.isEmpty()){
+                    System.out.println("No hay pacientes en fila");
+                }
+                else {
+                    queue.poll();
+                    System.out.println("Se ha atendido existosamente");
+                }
             }
             else if (optionn == 2){
                 System.out.println("Ingrese el nombre del paciente");

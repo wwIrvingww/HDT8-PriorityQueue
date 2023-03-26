@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="se trabajo en la interaccion con el usuario">
+    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="se ha finalizado la parte del codigo que corre con mi propia implementacion">
+      <change afterPath="$PROJECT_DIR$/src/JavaPriorityQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,9 @@
       <workItem from="1679677156271" duration="8057000" />
       <workItem from="1679701221049" duration="37000" />
       <workItem from="1679762607654" duration="4420000" />
-      <workItem from="1679767090039" duration="1253000" />
+      <workItem from="1679767090039" duration="1958000" />
+      <workItem from="1679781454456" duration="10000" />
+      <workItem from="1679847490125" duration="1507000" />
     </task>
     <task id="LOCAL-00001" summary="Se implemento la clase Reader para leer el archivo de texto">
       <created>1679593765491</created>
@@ -97,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679684269559</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="se ha finalizado la parte del codigo que corre con mi propia implementacion">
+      <created>1679769167731</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679769167731</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +132,7 @@
     <MESSAGE value="Se implementó un método para crear un arrayist de tipo Patient" />
     <MESSAGE value="Se implementó un método para ordenar a los pacientes por prioridad con la heap propia" />
     <MESSAGE value="se trabajo en la interaccion con el usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="se trabajo en la interaccion con el usuario" />
+    <MESSAGE value="se ha finalizado la parte del codigo que corre con mi propia implementacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="se ha finalizado la parte del codigo que corre con mi propia implementacion" />
   </component>
 </project>

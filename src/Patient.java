@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class Patient {
+public class Patient implements Comparable<Patient> {
     //Variables
     private String name;
     private String description;
@@ -40,11 +41,12 @@ public class Patient {
         this.priority = priority;
     }
 
-
-
-
-
-
-
+    @Override
+    public int compareTo(Patient otherPatient) {
+        String[] priorities = {"A", "B", "C", "D", "E"};
+        int thisPriorityIndex = Arrays.asList(priorities).indexOf(this.priority);
+        int otherPriorityIndex = Arrays.asList(priorities).indexOf(otherPatient.getPriority());
+        return Integer.compare(thisPriorityIndex, otherPriorityIndex);
+    }
 
 }
