@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="se culminó la interacción utilizando la PirorityQueue de java">
+    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="Java doc añadido">
+      <change afterPath="$PROJECT_DIR$/src/MyPriorityQueuueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IComparable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HDT8-PriorityQueue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HDT8-PriorityQueue.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +35,54 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RunManager" selected="JUnit.MyPriorityQueuueTest.offerTest">
+    <configuration name="MyPriorityQueuueTest.isEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HDT8-PriorityQueue" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyPriorityQueuueTest" />
+      <option name="METHOD_NAME" value="isEmptyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyPriorityQueuueTest.offerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HDT8-PriorityQueue" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyPriorityQueuueTest" />
+      <option name="METHOD_NAME" value="offerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyPriorityQueuueTest.pollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HDT8-PriorityQueue" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyPriorityQueuueTest" />
+      <option name="METHOD_NAME" value="pollTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyPriorityQueuueTest.offerTest" />
+        <item itemvalue="JUnit.MyPriorityQueuueTest.pollTest" />
+        <item itemvalue="JUnit.MyPriorityQueuueTest.isEmptyTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +101,8 @@
       <workItem from="1679762607654" duration="4420000" />
       <workItem from="1679767090039" duration="1958000" />
       <workItem from="1679781454456" duration="10000" />
-      <workItem from="1679847490125" duration="6844000" />
+      <workItem from="1679847490125" duration="8469000" />
+      <workItem from="1679921525843" duration="2009000" />
     </task>
     <task id="LOCAL-00001" summary="Se implemento la clase Reader para leer el archivo de texto">
       <created>1679593765491</created>
@@ -123,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679852166555</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Java doc añadido">
+      <created>1679855212795</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679855212795</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +202,7 @@
     <MESSAGE value="se ha finalizado la parte del codigo que corre con mi propia implementacion" />
     <MESSAGE value="se inicializaron los metodos con la clase Priority queue proporcionada por Java" />
     <MESSAGE value="se culminó la interacción utilizando la PirorityQueue de java" />
-    <option name="LAST_COMMIT_MESSAGE" value="se culminó la interacción utilizando la PirorityQueue de java" />
+    <MESSAGE value="Java doc añadido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java doc añadido" />
   </component>
 </project>

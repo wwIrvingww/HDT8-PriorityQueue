@@ -1,3 +1,10 @@
+/**
+ * Programa que tiene como finalidad utilizar PriorityQueue a traves de un sistema de hospital
+ * en el cual se debe atender primero al que tenga mayor priorirdad
+ * Irving Acosta - 22781
+ * Ingeniero: Pablo Godoy
+ */
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.PriorityQueue;

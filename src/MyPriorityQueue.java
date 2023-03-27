@@ -1,5 +1,10 @@
-import java.util.Comparator;
+/**
+ * Implementacion propia de una cola de prioridad
+ * Referencias: https://www.geeksforgeeks.org/priority-queue-using-binary-heap/
+ * Referencias: https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/priority_queue_using_heap/topic
+ */
 
+import java.util.Comparator;
 import java.util.ArrayList;
 
 public class MyPriorityQueue {
