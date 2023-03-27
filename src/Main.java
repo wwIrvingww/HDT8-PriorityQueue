@@ -58,6 +58,9 @@ public class Main {
                     queue.offer(newPatient);
                     System.out.println("Se ha agregado exitosamente");
                 } else if (optionn == 3) {
+                    if (queue.isEmpty()){
+                        System.out.println("No hay pacientes en fila");
+                    }
                     int k = 0;
                     while (k < queue.size()) {
                         Patient patient = queue.getPatient(k);
@@ -108,6 +111,9 @@ public class Main {
                     javaPriorityQueue.offer(newPatient);
                     System.out.println("Se ha agregado exitosamente");
                 } else if (optionn == 3) {
+                    if (javaPriorityQueue.isEmpty()){
+                        System.out.println("No hay pacientes en fila");
+                    }
                     Iterator<Patient> iter2 = javaPriorityQueue.iterator();
                     while(iter2.hasNext()) {
                         Patient elemento2 = iter2.next();

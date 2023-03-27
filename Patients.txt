@@ -1,5 +1,7 @@
-Juan, dolor de cabeza, A
-Jair, hombro dislocado, C
-Gerson, Ceguera temporal, B
+Gerson, dolor lumbal, C
+Jair, hombro dislocado, D
+Alejandro Sanz, corazon parti'o, A
+Yo, alma rota, A
+Emy, asfixia por pan, A
+Miguel, picadura de abeja, B
 Sophia, esguince de tobillo, E
-Miguel, picadura de abeja, D

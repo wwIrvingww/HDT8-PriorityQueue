@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="Java doc añadido">
-      <change afterPath="$PROJECT_DIR$/src/MyPriorityQueuueTest.java" afterDir="false" />
+    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="pruebas Junit creadas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HDT8-PriorityQueue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HDT8-PriorityQueue.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Patients.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MyPriorityQueuueTest.offerTest">
+  <component name="RunManager">
     <configuration name="MyPriorityQueuueTest.isEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDT8-PriorityQueue" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,9 +74,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyPriorityQueuueTest.isEmptyTest" />
         <item itemvalue="JUnit.MyPriorityQueuueTest.offerTest" />
         <item itemvalue="JUnit.MyPriorityQueuueTest.pollTest" />
-        <item itemvalue="JUnit.MyPriorityQueuueTest.isEmptyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +99,8 @@
       <workItem from="1679767090039" duration="1958000" />
       <workItem from="1679781454456" duration="10000" />
       <workItem from="1679847490125" duration="8469000" />
-      <workItem from="1679921525843" duration="2009000" />
+      <workItem from="1679921525843" duration="3586000" />
+      <workItem from="1679941460250" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="Se implemento la clase Reader para leer el archivo de texto">
       <created>1679593765491</created>
@@ -174,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679855212795</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="pruebas Junit creadas">
+      <created>1679940127419</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679940127419</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pruebas Junit creadas">
+      <created>1679940137359</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679940137359</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +215,18 @@
     <MESSAGE value="se inicializaron los metodos con la clase Priority queue proporcionada por Java" />
     <MESSAGE value="se culminó la interacción utilizando la PirorityQueue de java" />
     <MESSAGE value="Java doc añadido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java doc añadido" />
+    <MESSAGE value="pruebas Junit creadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="pruebas Junit creadas" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Reader.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
