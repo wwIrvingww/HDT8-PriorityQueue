@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="pruebas Junit creadas">
+    <list default="true" id="6a4b81f7-d125-4adc-bc16-b5ff0881e55a" name="Changes" comment="se agregaron detalles al main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Patients.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +99,13 @@
       <workItem from="1679781454456" duration="10000" />
       <workItem from="1679847490125" duration="8469000" />
       <workItem from="1679921525843" duration="3586000" />
-      <workItem from="1679941460250" duration="334000" />
+      <workItem from="1679941460250" duration="1223000" />
+      <workItem from="1679971573764" duration="88000" />
+      <workItem from="1680008518867" duration="73000" />
+      <workItem from="1680093489125" duration="37000" />
+      <workItem from="1680181355690" duration="442000" />
+      <workItem from="1680195299659" duration="445000" />
+      <workItem from="1680276032988" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="Se implemento la clase Reader para leer el archivo de texto">
       <created>1679593765491</created>
@@ -186,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679940137359</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="se agregaron detalles al main">
+      <created>1679942090049</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679942090049</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +228,8 @@
     <MESSAGE value="se culminó la interacción utilizando la PirorityQueue de java" />
     <MESSAGE value="Java doc añadido" />
     <MESSAGE value="pruebas Junit creadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="pruebas Junit creadas" />
+    <MESSAGE value="se agregaron detalles al main" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agregaron detalles al main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

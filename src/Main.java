@@ -11,6 +11,7 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+
         //Instanciar objetos
         Scanner sc = new Scanner(System.in);
 
@@ -25,6 +26,7 @@ public class Main {
 
         System.out.println("Escoja con que PrioritQueue desea ejecutar el programa\n(1)Propia\n(2)Java");
         optionPriorityQueue = sc.nextInt();
+
 
         if (optionPriorityQueue == 1) {
             //Mostrar la lista de pacientes leída del txt file
